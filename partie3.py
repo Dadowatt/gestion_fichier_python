@@ -31,12 +31,13 @@ print(f"Compteur actuel : {compteur}")
 while True:
     print("\nQue voulez-vous faire ?")
     print("1. Augmenter le compteur")
-    print("0. Diminuer le compteur")
+    print("2. Diminuer le compteur")
     choix = input("Choisir une option : ").strip()
     if choix == "1":
         compteur += 1
-    elif choix == "0":
-        compteur -= 1
+    elif choix == "2":
+        if compteur > 0:
+            compteur -= 1
     else:
         print("Saisie incorrecte, veuillez choisir 1 ou 2")
 
